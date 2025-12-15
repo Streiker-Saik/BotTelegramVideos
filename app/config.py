@@ -19,6 +19,10 @@ class Settings(BaseSettings):
     POSTGRES_HOST: str
     POSTGRES_PORT: int
 
+    TELEGRAM_TOKEN: str
+
+    HUGGING_TOKEN: str
+
     DATABASE_URL: Optional[str] = None
 
     @model_validator(mode="before")
