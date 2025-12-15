@@ -29,5 +29,5 @@ async def generate_sql(user_query: str) -> str:
         ) as response:
             response.raise_for_status()
             result = await response.json()
-            print(result)
+
             return result["choices"][0]["message"]["content"]

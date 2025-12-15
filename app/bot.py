@@ -17,7 +17,7 @@ async def handle_message(message: types.Message):
     user_query = message.text
     query = await generate_sql(user_query)
     result = await BaseService.execute_sql_query(query)
-    await message.answer(f"Ответ: {result}")
+    await message.answer(result)
 
 
 async def bot_telegram():
