@@ -73,6 +73,13 @@ python --version
 
 ---  
 ## Запуск проекта:
+### Контейнерная сборка:
+- Запустите Docker
+- Выполните команду в терминале проекта:
+  ```bash
+  docker-compose up -d --build --force-recreate
+  ```
+  **Загрузка происходит с заполнением БД файла из JSON создайте data/videos.json в корне проекта**
 - ### Локально:
   ```bash
   python main.py

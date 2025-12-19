@@ -13,15 +13,15 @@ class Settings(BaseSettings):
     Класс для настройки подключения к базе данных Postgres.
     """
 
-    POSTGRES_DB: str
-    POSTGRES_USER: str
-    POSTGRES_PASSWORD: str
-    POSTGRES_HOST: str
-    POSTGRES_PORT: int
+    POSTGRES_DB: str = "your_database_name_here"
+    POSTGRES_USER: str = "your_user_name_here"
+    POSTGRES_PASSWORD: str = "your_password_here"
+    POSTGRES_HOST: str = "localhost"
+    POSTGRES_PORT: int = 5432
 
-    TELEGRAM_TOKEN: str
+    TELEGRAM_TOKEN: str = "your_telegram_token_here"
 
-    HUGGING_TOKEN: str
+    HUGGING_TOKEN: str = "your_huggingface_token_here"
 
     DATABASE_URL: Optional[str] = None
 
